@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  backend:
+    build: Docker-Files/BE/
+    volumes:
+      - ./server:/project/server
+    ports:
+      - 8000:8000
+
